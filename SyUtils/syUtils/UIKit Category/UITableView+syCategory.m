@@ -35,12 +35,12 @@
 - (NSIndexPath *)getNextIndexPath:(NSUInteger)row forSection:(NSUInteger)section
 {
     NSArray *indexPaths = [self getIndexPathsForSection:section];
-    return [indexPaths objectAtIndex:row+1];
+    return indexPaths[row+1];
 }
 
 - (NSIndexPath *)getPreviousIndexPath:(NSUInteger)row forSection:(NSUInteger)section
 {
     NSArray *indexPaths = [self getIndexPathsForSection:section];
-    return [indexPaths objectAtIndex:row-1];
+    return indexPaths[row-1];
 }
 @end

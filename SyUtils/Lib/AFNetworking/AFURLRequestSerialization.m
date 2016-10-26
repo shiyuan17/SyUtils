@@ -873,7 +873,7 @@ NSTimeInterval const kAFUploadStream3GSuggestedDelay = 0.2;
             bodyPart.hasFinalBoundary = NO;
         }
 
-        [[self.HTTPBodyParts objectAtIndex:0] setHasInitialBoundary:YES];
+        [self.HTTPBodyParts[0] setHasInitialBoundary:YES];
         [[self.HTTPBodyParts lastObject] setHasFinalBoundary:YES];
     }
 }
